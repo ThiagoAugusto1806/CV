@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2018.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>Curriculo</title>
+
+    <style>
+        html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+    
+        h1{
+            text-align: center;
+        }
+        #container{
+            display: flexbox;
+        }
+        #containerExp, #containerEdu{
+            align-content: right;
+            max-width: 25%;
+        }
+        #listaExp, #listaEdu{
+            margin: 2px;
+            padding-right: 3em;
+            text-align:center;
+            border: 1px solid #ccc;
+        }
+        footer a{
+            display:inline-block;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+    /* Style the tab */
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+    
+        /* Style the buttons inside the tab */
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+    
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: #ddd;
+        }
+    
+        /* Create an active/current tablink class */
+        .tab button.active {
+            background-color: #ccc;
+        }
+    
+        /* Style the tab content */
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+
+        
+    }
+    </style>
+</head>
+<body>
+    <div class="w3-content" style="max-width:1600px; min-height:599px;">
+
+
+        <header class="w3-container w3-2018-sailor-blue">
+            <h1>Thiago Augusto Ceron Back</h1>
+        </header>
+        
+        <div class="tab">
+            <button class="tablink" onclick="openTab(event, 'sobre')"><i class="fa fa-terminal"></i> Sobre</button>
+            <button class="tablink" onclick="openTab(event, 'educ')"><i class="fa fa-graduation-cap"></i> Educação</button>
+            <button class="tablink" onclick="openTab(event, 'exp')"><i class="fa fa-sitemap"></i> Experiência</button>
+            <button class="tablink" onclick="openTab(event, 'skills')"><i class="fa fa-area-chart"></i> Skills</button>
+            <button class="tablink" onclick="openTab(event, 'idiomas')"><i class="fa fa-globe"></i> Idiomas</button>
+            <button class="tablink" onclick="openTab(event, 'contatos')"><i class="fa fa-address-book"></i> Contatos</button>
+        </div>
+        
+        <div id="sobre" class="tabcontent">
+            <h2>Informações Gerais</h2>
+            <p>Estudante de Ciências da Computação com foco em linguagens front end e web, boa lógica de programação e criatividade para resolver problemas</p>
+            
+        </div>
+        <div id="skills" class="tabcontent">
+            <h3>Atendimento</h3>
+            <div class="w3-light-grey" style="width:25%;border-radius:10px;">
+                <div class="w3-2018-sailor-blue" style="height:24px;width:90%;border-radius:10px;"></div>
+            </div>
+            <h3>Comunicação</h3>
+            <div class="w3-light-grey" style="width:25%;border-radius:10px;">
+                <div class="w3-2018-sailor-blue" style="height:24px;width:80%;border-radius:10px;"></div>
+            </div>
+            <h3>HTML</h3>
+            <div class="w3-light-grey" style="width:25%;border-radius:10px;">
+                <div class="w3-2018-sailor-blue" style="height:24px;width:70%;border-radius:10px;"></div>
+            </div>
+            <h3>CSS</h3>
+            <div class="w3-light-grey" style="width:25%;border-radius:10px;">
+                <div class="w3-2018-sailor-blue" style="height:24px;width:60%;border-radius:10px;"></div>
+            </div>
+            <h3>JavaScript</h3>
+            <div class="w3-light-grey" style="width:25%;border-radius:10px;">
+                <div class="w3-2018-sailor-blue" style="height:24px;width:50%;border-radius:10px;"></div>
+            </div>
+        </div>
+        <div id="contatos" class="tabcontent">
+            <h2>Fone</h2>
+            <i class="fa fa-whatsapp"></i> (48) 9 8845-6203
+            <h2>Email</h2>
+            <i class="fa fa-envelope"></i> thiagoaugusto1806@gmail.com
+        </div>
+        <div id="educ" class="tabcontent">
+            <div id="containerEdu">
+                <div id="listaEdu">
+                    <h3>Unesc</h3>
+                    <h4>Ciências da Computação</h4>
+                    <p>Janeiro/2020 - Atualmente</p>
+                    <li>Programação Front end</li>
+                    <li>Programação Back end</li>
+                    <li>Lógica de Programação</li>
+                    <li>Gerenciamento de projetos</li>
+                </div>
+                <div id="listaEdu">
+                    <h3>IFSC</h3>
+                    <h4>Informatica 1</h4>
+                    <p>Fevereiro/2019 - Agosto/2019</p>
+                    <li>Pacote Office</li>
+                    <li>Introdução a conserto de hardware</li>
+                    <li>Funções Intermediarias Windows e Linux</li>
+                </div>
+            </div>
+        </div>
+        <div id="exp" class="tabcontent">
+            <div id="containerExp">
+                <div id="listaExp">
+                    <h3>Despachante Benincá</h3>
+                    <h4>Auxiliar administrativo</h4>
+                    <p>Abril/2024 - Atualmente</p>
+                    <li>Assitencia administrativa</li>
+                    <li>Auditoria de processos</li>
+                    <li>Emissão de documentos</li>
+                </div>
+                <div id="listaExp">
+                    <h3>Despachante Benincá</h3>
+                    <h4>Digitador</h4>
+                    <p>Maio/2021 - Março/2024</p>
+                    <li>Atendimento ao cliente</li>
+                    <li>Emissão de documentos</li>
+                    <li>Atendimento por telefone</li>
+                </div>
+            </div>
+            
+            
+            
+        </div>
+        <div id="idiomas" class="tabcontent">
+            <h3>Português</h3>
+            <div class="w3-light-grey" style="width:25%;border-radius:10px;">
+                <div class="w3-2018-sailor-blue" style="height:24px;width:100%;border-radius:10px;"></div>
+            </div>
+            <h3>Inglês</h3>
+            <div class="w3-light-grey" style="width:25%;border-radius:10px;">
+                <div class="w3-2018-sailor-blue" style="height:24px;width:55%;border-radius:10px;"></div>
+            </div>
+        </div>
+    
+    
+    </div>
+    
+
+    <div id="container">
+        <footer class="w3-container w3-2018-sailor-blue w3-center w3-margin-top">
+            <p>Redes Sociais</p>
+            <a href="https://www.instagram.com/ceronthiago/" target="_blank"><i class="fa fa-instagram w3-hover-opacity w3-xlarge"></i></a>
+            <a href="https://github.com/ThiagoAugusto1806" target="_blank"><i class="fa fa-github w3-hover-opacity w3-xlarge"></i></a>
+            <a href="https://www.linkedin.com/in/thiago-augusto-7354861b6/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity w3-xlarge"></i></a>
+            
+            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+        </footer>
+    </div>
+    
+
+    <script>
+        function openTab(evt, tab) {
+            var i, tabcontent, tablink;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for(i = 0; i<tabcontent.length; i++){
+                tabcontent[i].style.display = "none";
+            }
+            tablink = document.getElementsByClassName("tablink");
+            for(i = 0; i<tablink.length; i++){
+                tablink[i].classname = tablink[i].className.replace(" active", "");
+            }
+            document.getElementById(tab).style.display = "block";
+            evt.currentTarget.className += "active";
+        }
+    </script>
+    
+    
+    
+</body>
+</html>
+
