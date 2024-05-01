@@ -12,7 +12,43 @@
 
     <style>
         html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-    
+        
+        @media screen and (max-width: 500px) {
+            
+            #listaExp, #listaEdu{
+                margin: 0;
+                min-width: 100%;
+                padding: 5px;
+                flex-wrap: wrap;
+                border: 1px solid #ccc;
+            }
+
+            #skillBar, #idiomaBar {
+                
+                max-width: 200%;
+                border-radius:10px;
+            }
+        }
+        @media screen and (min-width: 500px) {
+            
+            #listaExp, #listaEdu{
+                margin: 0;
+                min-width: 25%;
+                padding: 5px;
+                flex-wrap: wrap;
+                border: 1px solid #ccc;
+                
+                
+            }
+            #skillBar, #idiomaBar{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                max-width: 50%;
+                border-radius:10px;
+            }
+        }
         h1{
             text-align: center;
         }
@@ -20,15 +56,15 @@
             display: flexbox;
         }
         #containerExp, #containerEdu{
-            align-content: right;
-            max-width: 25%;
+            display: flex;
+            flex-direction: column;
+            align-items:start;
+            text-align: center;
+            padding: 5px;
+            
         }
-        #listaExp, #listaEdu{
-            margin: 2px;
-            padding-right: 3em;
-            text-align:center;
-            border: 1px solid #ccc;
-        }
+        
+        
         footer a{
             display:inline-block;
             text-align: center;
@@ -76,7 +112,7 @@
     </style>
 </head>
 <body>
-    <div class="w3-content" style="max-width:1600px; min-height:599px;">
+    <div class="w3-content" style="max-width:1600px; min-height: 750px;">
 
 
         <header class="w3-container w3-2018-sailor-blue">
@@ -99,23 +135,23 @@
         </div>
         <div id="skills" class="tabcontent">
             <h3>Atendimento</h3>
-            <div class="w3-light-grey" style="width:25%;border-radius:10px;">
+            <div class="w3-light-grey" id="skillBar">
                 <div class="w3-2018-sailor-blue" style="height:24px;width:90%;border-radius:10px;"></div>
             </div>
             <h3>Comunicação</h3>
-            <div class="w3-light-grey" style="width:25%;border-radius:10px;">
+            <div class="w3-light-grey" id="skillBar">
                 <div class="w3-2018-sailor-blue" style="height:24px;width:80%;border-radius:10px;"></div>
             </div>
             <h3>HTML</h3>
-            <div class="w3-light-grey" style="width:25%;border-radius:10px;">
+            <div class="w3-light-grey" id="skillBar">
                 <div class="w3-2018-sailor-blue" style="height:24px;width:70%;border-radius:10px;"></div>
             </div>
             <h3>CSS</h3>
-            <div class="w3-light-grey" style="width:25%;border-radius:10px;">
+            <div class="w3-light-grey" id="skillBar">
                 <div class="w3-2018-sailor-blue" style="height:24px;width:60%;border-radius:10px;"></div>
             </div>
             <h3>JavaScript</h3>
-            <div class="w3-light-grey" style="width:25%;border-radius:10px;">
+            <div class="w3-light-grey" id="skillBar">
                 <div class="w3-2018-sailor-blue" style="height:24px;width:50%;border-radius:10px;"></div>
             </div>
         </div>
@@ -171,11 +207,11 @@
         </div>
         <div id="idiomas" class="tabcontent">
             <h3>Português</h3>
-            <div class="w3-light-grey" style="width:25%;border-radius:10px;">
+            <div class="w3-light-grey" id="idiomaBar">
                 <div class="w3-2018-sailor-blue" style="height:24px;width:100%;border-radius:10px;"></div>
             </div>
             <h3>Inglês</h3>
-            <div class="w3-light-grey" style="width:25%;border-radius:10px;">
+            <div class="w3-light-grey" id="idiomaBar">
                 <div class="w3-2018-sailor-blue" style="height:24px;width:55%;border-radius:10px;"></div>
             </div>
         </div>
